@@ -195,7 +195,7 @@ module BushSlicer
     end
 
     # @param vm [VirtualMachine]
-    def wait_guest_ip(vm, vmname: nil, timeout: 300)
+    def wait_guest_ip(vm, vmname: nil, timeout: 1200)
       vmname ||= vm.name
       logger.debug "waiting up to #{timeout} seconds for VM #{vmname} " \
         "to get an IP assigned"
